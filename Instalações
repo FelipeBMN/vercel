@@ -1,0 +1,6 @@
+npm init -y
+npm install next 
+npm install react
+npm isntall react-dom
+
+Erro - Criar pages 
