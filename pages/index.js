@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function Home() {
     return (
-        <div>
+        <div script="align:left;">
             <h1>Contador  <Contador /></h1>
         </div>
     ) 
