@@ -12,10 +12,10 @@ function Home() {
 }
 
 function Contagem() {
-    const [contador, setContador] = useState(1);
+    const [contador, setContador] = useState(10);
 
     function adicionarContador() {
-        setContador(contador + 1);
+        setContador(contador + 2);
     }
 
     return (
