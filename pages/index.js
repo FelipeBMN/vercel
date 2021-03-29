@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function Home() {
     return (
-        <div script="align:left;">
+        <div>
             <h1>VOCÊ APERTOU  <Contador /> VEZES</h1>
         </div>
     ) 
@@ -15,9 +15,7 @@ function Contador() {
         setContador(contador + 1);
     }
 
-    return (
-         <div>{contador}</div>    
-    )
+    return ( {contador} )
 }
 
 export default  Home
