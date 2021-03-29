@@ -1,5 +1,18 @@
 import { useState } from 'react';
 
+
+function Principal() {
+
+    return (
+        <div>
+            <Contagem/>
+        </div>
+    ) 
+}
+
+export default  Principal
+
+
 function Contagem() {
     const [contador, setContador] = useState(1);
 
@@ -7,14 +20,22 @@ function Contagem() {
         setContador(contador + 1);
     }
 
+    function retiraContador(){
+        setContador(contador - 1);
+    }
+
     return (
         <div>
-            <h2>Você apertou {contador} vezes!</h2>
-            <button onClick={adicionarContador}>Adicionar</button>
+            <strong><p style={{fontSize:"80px"}}>Você apertou {contador} vezes!</p></strong>
+            <button style={{width:"200px",height:"200px",fontSize:"40px"}} onClick={adicionarContador}>Adicionar</button>
+            <button style={{width:"220px",height:"200px",fontSize:"40px"}} onClick={retiraContador}>Retira</button>
         </div>
     )
 }
 
+
+
+/*
 function CapsLock(props){
     const [texto,setTexto] = useState(props.children);
     // props.children <CapsLock></CapsLock>
@@ -29,20 +50,8 @@ function CapsLock(props){
         }else{
             setTexto(""); 
         }
-    }
-    
+    }  
     return <div> <h1>{texto}</h1> <button onClick={troca}>Teste</button></div>
 }
-
-function Home() {
-    return (
-        <div>
-            <Contagem />
-            <div style={{marginTop:"20px"}}>
-                <CapsLock></CapsLock>
-            </div>
-        </div>  
-    ) 
-}
-export default  Home
+*/
 
