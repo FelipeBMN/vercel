@@ -5,7 +5,7 @@ function Home() {
         <div>
             <h1>Cabeçalho Fixo</h1>
             <div>
-                <Contagem /> 
+                <CapsLock texto="Me deixa em Caps Lock por favor!"/>
             </div>
         </div>  
     ) 
@@ -20,10 +20,17 @@ function Contagem() {
 
     return (
         <div>
-            <h1>Você apertou {contador} vezes!</h1>
+            <h2>Você apertou {contador} vezes!</h2>
             <button onClick={adicionarContador}>Adicionar</button>
         </div>
     )
+}
+
+function CapsLock(props){
+    const textoInserido = props.texto
+    const textoEmCapsLock =  props.textoInserido.toUpperCase()
+
+    return <div>{textoEmCapsLock}</div>
 }
 
 export default  Home
