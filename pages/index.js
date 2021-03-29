@@ -8,7 +8,7 @@ function Home() {
         </div>
     ) 
 }
-
+ 
 const [contador, setContador] = useState(1);
 
 function Contador() {
