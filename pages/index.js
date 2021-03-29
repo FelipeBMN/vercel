@@ -2,13 +2,16 @@ import { useState } from 'react';
 
 function Home() {
     return (
-        <div >
-             <Contador />
-        </div>
+        <div>
+            <div>Cabeçalho Fixo</div>
+            <div>
+                <Contagem /> 
+            </div>
+        </div>  
     ) 
 }
 
-function Contador() {
+function Contagem() {
     const [contador, setContador] = useState(1);
 
     function adicionarContador() {
