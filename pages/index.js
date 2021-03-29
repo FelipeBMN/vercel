@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Home() {
     return (
         <div>
-            <div>Cabeçalho Fixo</div>
+            <h1>Cabeçalho Fixo</h1>
             <div>
                 <Contagem /> 
             </div>
