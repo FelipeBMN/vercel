@@ -15,7 +15,7 @@ function Contador() {
         setContador(contador + 1);
     }
 
-    return ( {contador} )
+    return ( <div>{contador}</div> )
 }
 
 export default  Home
