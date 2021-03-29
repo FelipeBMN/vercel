@@ -3,7 +3,7 @@ import { useState } from 'react';
 function Home() {
     return (
         <div script="align:left;">
-            <h1>Contador  <Contador /></h1>
+            <h1>VOCÊ APERTOU  <Contador /> VEZES</h1>
         </div>
     ) 
 }
@@ -16,10 +16,7 @@ function Contador() {
     }
 
     return (
-        <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
-        </div>
+         <div>{contador}</div>    
     )
 }
 
